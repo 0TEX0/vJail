@@ -105,7 +105,7 @@ AddEventHandler('esx_jail:sendToJail', function(playerId, jailTime, message, src
 					xPlayer.triggerEvent('esx_jail:jailPlayer', jailTime, message, src)
 					playersInJail[playerId] = {timeRemaining = jailTime, identifier = xPlayer.identifier }
 					if not quiet then
-						TriggerClientEvent('esx:showAdvancedNotification', playerId, "Prison", "Vous avez été ~r~Jail", "- ~g~"..ESX.Math.Round(jailTime / 60).."~s~ Minutes", 'CHAR_BLOCKED', 0)
+						TriggerClientEvent('esx:showAdvancedNotification', playerId, "Prison", "Vous avez été ~r~Jail", "~g~"..ESX.Math.Round(jailTime / 60).."~s~ Minutes", 'CHAR_BLOCKED', 0)
 					end
 				end)
 			end
