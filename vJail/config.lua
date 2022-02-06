@@ -3,7 +3,7 @@
 
 Config = {}
 
-Config.discordwebhooklink = "https://discord.com/api/webhooks/926851339462524968/j3Kb5yCsdT1i9_L9divi5Vt8-X322HjWiC-oA45FA3Lc5gcBgGgThyjCoqVTi4OXqBjy" -- webhooks de votre discord
+Config.discordwebhooklink = "" -- webhooks de votre discord
 
 
 Config.UnJailLocation = vector3(1854.0, 2622.0, 45.0) -- position de Unjail
