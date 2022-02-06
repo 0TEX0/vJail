@@ -61,7 +61,7 @@ end)
 
 
 
-ESX.RegisterCommand('jail', 'admin', function(xPlayer, args, showError)
+ESX.RegisterCommand('jail', {'mod','admin','superadmin','_dev'}, function(xPlayer, args, showError)
 	local message = args.message
 	local src = GetPlayerName(xPlayer.source)
 	
@@ -73,7 +73,7 @@ end, true, {help = 'Jail a player', validate = true, arguments = {
 	{name = 'message', help = 'raison du jail', type = 'any'}
 }})
 
-ESX.RegisterCommand('unjail', 'admin', function(xPlayer, args, showError)
+ESX.RegisterCommand('unjail', {'admin','superadmin','_dev'}, function(xPlayer, args, showError)
 	unjailPlayer(args.playerId)
 --	sendDiscord("Joueur UnJail (/unjail)", "**Joueur:** "..GetPlayerName(args.playerId).."\n**UnJail par:** "..GetPlayerName(xPlayer.source).."")
 end, true, {help = 'Unjail joueur', validate = true, arguments = {
