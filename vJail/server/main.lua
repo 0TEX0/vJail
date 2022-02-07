@@ -3,7 +3,7 @@ local playersInJail = {}
 
 
 
-TriggerEvent('OTEXO&KraKss:esx:getSharedObject', function(obj) ESX = obj end)
+TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
 
 
